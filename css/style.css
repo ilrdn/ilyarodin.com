@@ -1,0 +1,144 @@
+body{
+    overflow-x: hidden;
+}
+header{
+    margin-top: 57px;
+}
+.navbar{
+    background-color: white;
+    border-bottom: 1px solid #983df6;
+}
+.nav-item a:hover{
+    color: #983df6 !important;
+}
+.nav-link.active{
+    color: #983df6 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #968c8c;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("/img/icons/menu.png");
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #968c8c;
+  } 
+.email{
+    transform: translateY(4px);
+}
+.night-btn{
+    height: 48px;
+    width: 48px;
+    background-image: url(/img/icons/moon.svg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.banner{
+    background-size: cover;
+    padding-top: 40%;
+    position: relative;
+}
+.banner-text{
+    animation-duration: 1s;
+    animation-name: slidein;
+    color: white;
+    padding-left: 5%;
+    position: absolute;
+    top: 22%;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.banner-text h1{
+    color: #983df6;
+    font-size: 8vw;
+}
+.banner-text p{
+    font-size: 2vw;
+}
+section{
+    padding: 5% 5% 2% 5%;
+}
+.section-heading{
+    text-align: center;
+}
+.section-heading p{
+    color: #968c8c;
+}
+.row{
+    align-items: center;
+}
+section img{
+    display: block;
+    margin: 10px auto 50px auto;
+    width: 35%;
+}
+footer{
+    background-color: #983df6;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+@media (max-device-width: 450px) {
+    .banner-text{
+        display: none;
+    }
+}
+@media (max-device-width: 800px) {
+    .banner{
+        background-image: url(/img/banner_small.jpg);
+    }
+}
+@media (min-device-width: 801px) and (max-device-width: 1400px) {
+    .banner{
+        background-image: url(/img/banner_medium.jpg);
+    }
+}
+@media (min-device-width: 1401px) {
+    .banner{
+        background-image: url(/img/banner_large.jpg);
+    }
+}
+/* @media (max-device-width: 600px) {
+    .banner-text{
+        display: none;
+    }
+}
+@media (max-device-width: 1000px) {
+    .banner-text{
+        font-size: 1rem;
+    }
+    .banner-text h1{
+        font-size: 2rem;
+    }
+}
+@media (min-device-width: 1400px) {
+    .banner-text{
+        font-size: 2.2rem;
+    }
+    .banner-text h1{
+        font-size: 4rem;
+    }
+}
+@media (min-device-width: 2200px) {
+    .banner-text{
+        font-size: 3rem;
+    }
+    .banner-text h1{
+        font-size: 6rem;
+    }
+} */
